@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Gerenciador de Ingressos</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Sistema Gerenciador de Ingressos</h1>
-            <div class="alinhar-direita">
-                <a href="cadastrar">Cadastre-se</a> ou Faça
-                <a href="login">Login</a>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1><a href="index.html">Sistema Gerenciador de Ingressos</a></h1>
+                <div class="login-links">
+                    <a href="cadastrar">Cadastre-se</a> ou Faça
+                    <a href="login">Login</a>
+                </div>
                 <form class="busca">
                     <label id="busca">Buscar:</label>
                     <input type="search" name="busca" placeholder="Buscar Shows, Filmes e Peças">
                 </form>
-            </div>
-            <nav>
-                <li>
-                    <a href="ofertas">Ofertas do dia</a>
-                </li>
-                
-                <li>
-                    <a href="categorias">Categorias</a>
-                    <ul class="submenu">
+                <nav class="menu-principal">
+                    <ul>
                         <li>
-                            <a href="shows">Shows</a>
+                            <a href="ofertas">Ofertas do dia</a>
                         </li>
                         <li>
-                            <a href="filmes">Filmes</a>
-                        </li>
-                        <li>
-                            <a href="Peças">Peças</a>
-                        </li>
+                            <a href="categorias">Categorias</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="shows">Shows</a>
+                                </li>
+                                <li>
+                                    <a href="filmes">Filmes</a>
+                                </li>
+                                <li>
+                                    <a href="Peças">Peças</a>
+                                </li>
 
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-
-
-
-            </nav>
-
-        </div>
-    </header>
-    <footer>
-    <div class="container">
-        Sistema de Gerenciamento de Ingressos
+                </nav>
+            </div>
+        </header>
+        <footer>
+            Sistema de Gerenciamento de Ingressos
+            <a href="termos-e-condicoes">Termos e Condições</a>
+            <a href="politicas-de-privacidade">Políticas de Privacidade</a>
+            <a href="contato">Contato</a>
+        </footer>
     </div>
-</footer>
 </body>
+
 </html>
