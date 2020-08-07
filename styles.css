@@ -31,12 +31,6 @@ header a {
     margin: 0;
 }
 
-.login-links {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-}
-
 .menu-principal > ul > li > ul {
     display: none;
 }
@@ -49,7 +43,23 @@ header a {
     color: #bbb;
 }
 
+.busca label {
+    font-size: 1.2em;
+}
+
 input[name="busca"] {
     width: 90%;
     margin: 10px auto;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+#header-main {
+    display: flex;
+}
+
+.busca {
+    flex-grow: 1;
 }
