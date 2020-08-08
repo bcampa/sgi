@@ -105,9 +105,9 @@ input[name="busca"]::placeholder {
     flex-grow: 1;
 }
 
-.slideshow-container {
+/* .slideshow-container {
     display: none;
-}
+} */
 
 .header-top-item {
     margin: 0 20px;
