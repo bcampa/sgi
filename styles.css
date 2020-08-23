@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #eee;
 }
 
 h1 {
@@ -11,9 +12,13 @@ h1 {
 
 header {
     background-color: #00b0eb;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0;
     color: #fff;
     border-bottom: 1px solid #666;
+}
+
+button {
+    cursor: pointer;
 }
 
 .header-content {
@@ -31,7 +36,7 @@ header {
     width: 700px;
     justify-content: space-evenly;
     list-style: none;
-    margin: 10px;
+    margin: 10px 10px 0 10px;
 }
 
 header a {
@@ -105,10 +110,6 @@ input[name="busca"]::placeholder {
     flex-grow: 1;
 }
 
-/* .slideshow-container {
-    display: none;
-} */
-
 .header-top-item {
     margin: 0 20px;
 }
@@ -129,4 +130,144 @@ button {
 .login-links p {
     margin: 0px 5px;
     font-size: 0.9em;
+}
+
+.secao-ofertas {
+    width: 90vw;
+    margin: auto;
+}
+
+.ofertas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.oferta img {
+    max-height: 200px;
+}
+
+.oferta {
+    padding: 10px;
+    min-width: 150px;
+    margin: 0 0 10px 0;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.oferta:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: 0.05s ease-in;
+}
+
+figure img {
+    margin: 0 auto 5px auto;
+    display: block;
+}
+
+.oferta a {
+    text-decoration: none;
+    color: #444;
+}
+
+.oferta figcaption {
+    border-top: 1px solid #ccc;
+    padding: 3px 12px 0 12px;
+}
+
+footer {
+    background-color: #fff;
+    padding: 10px 30px;
+    color: #555;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+    font-size: 0.8em;
+    display: flex;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 1em 0 0;
+}
+
+#copyright {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.oferta .categoria {
+    font-size: 0.8em;
+}
+
+.oferta .preco {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+#toggle-menu {
+    display: none;
+    background-color: white;
+}
+
+#menu-responsivo {
+    display: none;
+}
+
+@media(max-width:480px) {
+
+    .oferta {
+        min-width: 140px;
+    }
+
+    .oferta img {
+        max-width: 140px;
+    }
+
+    .header-content {
+        width: 95%;
+    }
+
+    .header-top-item {
+        margin: 0;
+    }
+
+    .carrinho {
+        display: none;
+    }
+
+    .login-links {
+        display: none;
+    }
+
+    .menu-principal {
+        display: none;
+    }
+
+    #toggle-menu {
+        display: block;
+        background: none;
+        border: none;
+        padding: 5px;
+    }
+
+    #menu-responsivo a {
+        display: block;
+        color: #333;
+        padding: 7px;
+    }
+
+    #menu-responsivo div {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #menu-responsivo.ativo {
+        display: block;
+        background-color: #fff;
+        margin-top: 10px;
+    }
 }
